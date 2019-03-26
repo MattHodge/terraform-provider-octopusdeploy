@@ -1,42 +1,21 @@
-# terraform-provider-octopusdeploy
+# [DEPRECIATED] terraform-provider-octopusdeploy
 
-A Terraform provider for [Octopus Deploy](https://octopus.com).
+Good news!
 
-It is based on the [go-octopusdeploy](https://github.com/MattHodge/go-octopusdeploy) Octopus Deploy client SDK.
+The team at [Octopus Deploy](https://octopus.com/) have taken notice of this project :tada:.
 
-[![CircleCI](https://circleci.com/gh/MattHodge/terraform-provider-octopusdeploy/tree/master.svg?style=svg)](https://circleci.com/gh/MattHodge/terraform-provider-octopusdeploy/tree/master)
+We have both decided the best way forward for the project is for the team at Octopus Deploy to take over the reins and continue the development and support.
 
-> :warning: This provider is in heavy development. There may be breaking changes.
+This means that Octopus Deploy will be getting an *official* Terraform provider :heart_eyes:.
 
-## Downloading & Installing
+It was never my intention to spend a lot of time looking after this project, so I am very excited that the team reached out and offered assistance.
 
-As this provider is still under development, you will need to manually download it.
+The project has been forked at https://github.com/OctopusDeploy/terraform-provider-octopusdeploy.
 
-There are compiled binaries for most platforms in [Releases](https://github.com/MattHodge/terraform-provider-octopusdeploy/releases).
+Please head over there to contribute and file bug reports!
 
-To use it, extract the binary for your platform into the same folder as your `.tf` file(s) will be located, then run `terraform init`.
+Happy Deploying!
 
-## Configure the Provider
-
-```hcl
-# main.tf
-
-provider "octopusdeploy" {
-  address = "http://octopus.production.yolo"
-  apikey  = "API-XXXXXXXXXXXXX"
-}
-```
-
-## Data Sources
-
-* [octopusdeploy_environment](docs/provider/data_sources/environment.md)
-* [octopusdeploy_lifecycle](docs/provider/data_sources/lifecycle.md)
-
-## Provider Resources
-
-* [octopusdeploy_environment](docs/provider/resources/environment.md)
-* [octopusdeploy_lifecycle](docs/provider/resources/lifecycle.md)
-
-## Provider Resources (To Be Moved To /docs)
-
-* All other resource documentation is currently [here](docs/to_move_to_provider.md).
+Matthew Hodgkins
+* **Twitter** - [@MattHodge](https://twitter.com/matthodge)
+* **Blog** - [hodgkins.io](https://hodgkins.io)
